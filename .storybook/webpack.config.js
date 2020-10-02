@@ -30,10 +30,11 @@ module.exports = async ({ config, mode }) => {
                     localIdentName: '[name]__[local]___[hash:base64:5]',
                 },
             },
-            'postcss-loader',
+            // 'postcss-loader',
             'sass-loader',
         ],
         include: [
+            path.resolve(path.resolve(__dirname), '../styles'),
             COMPONENTS_PATH,
         ],
     });

@@ -41,8 +41,6 @@ module.exports = class extends Generator {
 			component_subpath,
 		} = this.answers;
 
-		console.log(this.answers, '!@!@');
-
 		const component_namespace = component_name.toLowerCase();
 		const component_path = `${component_subpath}/${component_namespace}`
 			.split('/').filter(x => x).join('/');
@@ -50,8 +48,6 @@ module.exports = class extends Generator {
 		const storybook_path = `${component_path}`;
 		
 		const destination = `./${component_path}`;
-
-		console.log(destination, '!!!');
 
 		this.registerTransformStream(rename(path =>{
 			path.basename = path.basename.replace(/Example/g, component_name);

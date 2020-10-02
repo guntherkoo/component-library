@@ -40,3 +40,5 @@ addParameters({
 		},
 	],
 });
+
+require('styles/_fonts.scss');
