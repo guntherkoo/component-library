@@ -1,12 +1,17 @@
 {
   "name": "component-library",
   "version": "0.0.1",
-  "description": "Personal component prototypes/library",
+  "description": "Personal library of components and prototypes",
   "scripts": {
     "dev": "start-storybook -c .storybook -s ./ -p 9001",
     "build": "rm -rf ./dist && gulp dist",
+    "scaffold-component": "lerna exec --scope generator-component-library scaffold-component",
     "test": "jest"
   },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/guntherkoo/component-library"
@@ -29,7 +34,7 @@
     "@storybook/react": "6.0.22",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.0.4",
-    "autoprefixer": "10.0.1",
+    "autoprefixer": "^9.0.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
@@ -37,8 +42,11 @@
     "babel-plugin-inline-react-svg": "1.1.1",
     "babel-plugin-module-resolver": "4.0.0",
     "babel-plugin-transform-rename-import": "2.3.0",
-    "css-loader": "4.3.0",
+    "css-loader": "2.1.1",
+    "eslint": "^7.10.0",
     "eslint-loader": "4.0.2",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "gulp": "4.0.2",
     "gulp-babel": "8.0.0",
     "gulp-rename": "2.0.0",
@@ -46,6 +54,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "26.4.2",
     "jest-cli": "26.4.2",
+    "lerna": "^3.22.1",
     "node-sass": "4.14.1",
     "postcss": "8.1.1",
     "sass-loader": "10.0.2",

@@ -33,14 +33,8 @@ module.exports = async ({ config, mode }) => {
             'postcss-loader',
             'sass-loader',
         ],
-    });
-
-    config.module.rules.push({
-        test: /\.scss$/,
-        loaders: [
-            'style-loader',
-            'css-loader',
-            'sass-loader',
+        include: [
+            COMPONENTS_PATH,
         ],
     });
 
