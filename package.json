@@ -1,0 +1,68 @@
+{
+  "name": "component-library",
+  "version": "0.0.1",
+  "description": "Personal component prototypes/library",
+  "scripts": {
+    "dev": "start-storybook -c .storybook -s ./ -p 9001",
+    "build": "rm -rf ./dist && gulp dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guntherkoo/component-library"
+  },
+  "author": "Gunther Koo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/plugin-proposal-export-default-from": "7.10.4",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-react": "7.10.4",
+    "@storybook/addon-a11y": "6.0.22",
+    "@storybook/addon-actions": "6.0.22",
+    "@storybook/addon-backgrounds": "6.0.22",
+    "@storybook/addon-centered": "5.3.21",
+    "@storybook/addon-knobs": "6.0.22",
+    "@storybook/addon-viewport": "6.0.22",
+    "@storybook/cli": "6.0.22",
+    "@storybook/react": "6.0.22",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.0.4",
+    "autoprefixer": "10.0.1",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.3.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-css-modules-transform": "1.6.2",
+    "babel-plugin-inline-react-svg": "1.1.1",
+    "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-transform-rename-import": "2.3.0",
+    "css-loader": "4.3.0",
+    "eslint-loader": "4.0.2",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.4.2",
+    "jest-cli": "26.4.2",
+    "node-sass": "4.14.1",
+    "postcss": "8.1.1",
+    "sass-loader": "10.0.2",
+    "style-loader": "1.2.1"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "dangerously-set-html-content": "1.0.8",
+    "lodash-es": "4.17.15",
+    "react-html-replace": "0.1.6"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
