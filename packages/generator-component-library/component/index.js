@@ -8,7 +8,7 @@ module.exports = class extends Generator {
 			{
 				type: 'input',
 				name: 'component_name',
-				message: 'What is the name of the new component? (example: AwesomeButton)',
+				message: 'What is the name of the new component? (example: BeautifulText)',
 				validate: input => {
 					const regexp = /([A-Z]+[a-z0-9]+)+/;
 					if (input.search(regexp) < 0) {
@@ -21,7 +21,7 @@ module.exports = class extends Generator {
 			{
 				type: 'input',
 				name: 'component_subpath',
-				message: 'What is the path of the new component? (example: /mysubpath)',
+				message: 'What is the path of the new component? (example: /common)',
 				default: '/',
 				validate: input => {
 					const regexp = /^[A-Za-z0-9/]+$/;
