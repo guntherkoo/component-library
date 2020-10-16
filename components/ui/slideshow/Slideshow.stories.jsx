@@ -16,7 +16,7 @@ const slick_settings = {
 };
 
 const style = {
-	width: '1024px',
+	width: '1240px',
 };
 
 const slideshow = [
