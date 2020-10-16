@@ -1,0 +1,56 @@
+@import 'styles/_easing';
+
+.container {
+	position: relative;
+
+	&:hover {
+		:global .slick-prev {
+			transform: translate3d(15px, -50%, 0);
+		}
+
+		:global .slick-next {
+			transform: translate3d(-15px, -50%, 0);
+		}
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		z-index: 1;
+	    font-size: 0;
+	    width: 40px;
+	    height: 40px;
+	    top: 50%;
+	    transform: translate3d(0, -50%, 0);
+	    transition: transform .2s $easeOutCubic;
+	    cursor: pointer;
+
+	    &:after {
+	    	content: '';
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	width: 100%;
+	    	height: 100%;
+	    	background: url('./static/arrow.svg') no-repeat center center white;
+	    	background-size: 50%;
+	    }
+
+	    &:focus {
+	    	outline: none;
+	    }
+	}
+}
+
+:global .slick-prev {
+	left: 0;
+
+	&:after {
+		transform: rotate(180deg);
+	}
+}
+
+:global .slick-next {
+	right: 0;
+}

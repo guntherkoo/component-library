@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames/bind';
-import ToDoContextProvider from './context/ToDoContext';
+// import classnames from 'classnames/bind';
+// import ToDoContextProvider from './context/ToDoContext';
 import ToDoList from './components/todolist/';
 import ToDoInput from './components/ToDoInput';
 
-import _styles from './ToDo.scss';
+// import _styles from './ToDo.scss';
 
-const styles = classnames.bind(_styles);
+// const styles = classnames.bind(_styles);
 
 const ToDo = props => {
 	const { style } = props;

@@ -57,14 +57,14 @@
     "lerna": "^3.22.1",
     "node-sass": "4.14.1",
     "postcss": "8.1.1",
+    "react-slick": "^0.27.11",
     "sass-loader": "10.0.2",
     "style-loader": "1.2.1"
   },
   "dependencies": {
     "classnames": "2.2.6",
     "dangerously-set-html-content": "1.0.8",
-    "lodash-es": "4.17.15",
-    "react-html-replace": "0.1.6"
+    "lodash-es": "4.17.15"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
@@ -75,6 +75,7 @@
     "dist"
   ],
   "browserslist": [
-    "> 1%", "last 4 versions"
+    "> 1%",
+    "last 4 versions"
   ]
 }
