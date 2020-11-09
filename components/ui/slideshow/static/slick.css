@@ -53,7 +53,7 @@
     position: relative;
     top: 0;
     left: 0;
-
+    margin-left: -5px;
     display: block;
 }
 .slick-track:before,
